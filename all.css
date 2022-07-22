@@ -151,6 +151,7 @@ p{
     color: #000;
     text-align: left;
     padding-top: 8px;
+    font-weight: 600;
 }
 
 
@@ -296,12 +297,41 @@ a{
 .fcontainer{
     width: 1296px;
     margin: 0 auto;
+    padding-top: 48px;
 }
-.fh{
+.fh ,.ff{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 36px;
 }
-.fh ul{
+.fh ul,.ff ul{
     display: flex;
-    
+    align-items: center;
 }
+.fhlist{
+    padding-right: 48px;
+}
+.fh img{
+    width: 48px;
+    height: 48px;
+    padding-left: 32px;
+}
+.fm{
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color :#ffffff;
+}
+.fm span{
+    padding-right: 20px;
+    font-size: 42px;
+    line-height: 54px;
+}
+.coner{
+    padding-left: 48px;
+}
+

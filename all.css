@@ -51,7 +51,10 @@ table {
 .body{
     font-family: 'Noto Sans TC', sans-serif;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 
 .banner{
@@ -63,7 +66,7 @@ table {
     height: 49px;
 }
 .list{
-    width: 67.5%;
+    max-width: 1296px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +121,7 @@ table {
     background-color: #FBF2F2;
 }
 .container{
-    width: 1296px;
+    max-width: 1296px;
     color: #650300;
     margin: 0 auto;
     text-align: center;
@@ -157,7 +160,7 @@ p{
 
 
 .classical{
-    width: 1296px;
+    max-width: 1296px;
     text-align: center;
     margin: 0 auto;
     padding: 80px 0;
@@ -187,7 +190,7 @@ p{
     text-align: center;
 }
 .design{
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -208,7 +211,7 @@ p{
 
 
 .custpost{
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
     text-align: center;
     padding: 80px 0;
@@ -245,7 +248,7 @@ p{
 
 
 .contact{
-    width: 636px;
+    max-width: 636px;
     margin: 0 auto;
     text-align: center;
     padding: 80px 0;
@@ -295,7 +298,7 @@ a{
     text-align: center;
 }
 .fcontainer{
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
     padding-top: 48px;
 }

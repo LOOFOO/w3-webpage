@@ -62,8 +62,8 @@ img{
 }
 .container{
    max-width: 1296px;
-   margin-right: 15px;
-   margin-left: 15px;
+   padding-right: 36px;
+   padding-left: 36px;
    margin: 0 auto; 
 }
 
@@ -104,6 +104,8 @@ img{
     .list{
         width: 100%;
         flex-direction: column;
+        padding-right: 0;
+        padding-left: 0;
         padding-bottom: 0px;
     }
     .list ul{
@@ -131,7 +133,7 @@ img{
     color: #650300;
     text-align: right;
     margin-right: 16.25%;
-    padding-top: 20%;
+    padding-top: 296px;
 }
 .main h4{
     font-size: 36px;
@@ -162,6 +164,7 @@ img{
     }
     .main{
         margin-right: 5%;
+        padding-top: 144px;
     }
     .main h4 ,.main h1{
         font-size: 180%;
@@ -176,14 +179,20 @@ img{
 .promise{
     color: #650300;
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .promise ul{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -24px
 }
 .promise li{
     width: 306px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 h2{
     font-size: 48px;
@@ -206,6 +215,11 @@ p{
     padding-top: 8px;
     font-weight: 600;
 }
+@media(max-width: 992px){
+    .promise li{
+        width: 50%;
+    }
+}
 @media(max-width: 767px){
     .promise h2{
         font-size: 30px;
@@ -217,15 +231,13 @@ p{
     .promise li{
         width: 90%;
     }
-    .promise p{
-        text-align: center;
-    }
 }
 
 
 .classical{
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .classical ul{
     display: flex;
@@ -242,14 +254,19 @@ p{
     font-weight: bold;
     font-style: italic;
 }
-@media(max-width: 767px){
+@media(max-width: 992px){
     .classical ul{
+        width: 60%;
         flex-direction: column;
-    }
-    .classical li{
-        margin: 24px;
+        margin: 0 auto;
     }
 }
+@media(max-width: 767px){
+    .classical ul{
+        width: 100%;
+    }
+}
+
 
 
 .back{
@@ -258,7 +275,8 @@ p{
     text-align: center;
 }
 .design{
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .design h2{
     color: #FFF;
@@ -273,30 +291,43 @@ p{
 .design li{
     background-color: #fff;
 }
-@media(max-width: 767px){
+@media(max-width: 992px){
     .design ul{
         flex-direction: column;
     }
     .design li{
-        margin: 24px;
+        margin-bottom: 24px;
+    }
+}
+@media(max-width: 767px){
+    .design h2{
+        padding-bottom: 0;
     }
 }
 
+
+
 .custpost{
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .custpost ul{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .custpost li{
+    width: 23%;
     border: 1px solid #DEE2E6;
     margin-right: 24px;
+    margin-bottom: 24px;
 }
 .custpost p{
     font-size: 16px;
     line-height: 24px;
     padding: 0 16px;
+    padding-top: 12px;
     font-weight: 600;
 }
 .date{
@@ -309,16 +340,20 @@ p{
 .text{
     height: 120px; 
 }
-@media(max-width: 767px){
+@media(max-width: 992px){
     .custpost ul{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
     }
     .custpost li{
-        margin-right: 0px;
-        margin: 16px;
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 24px;
     }
-    
+}
+@media(max-width: 767px){
+    .custpost li{
+        width: 100%; 
+    } 
 }
 
 
@@ -366,12 +401,17 @@ a{
     padding-top: 16px;
     padding-bottom: 48px;
 }
-@media(max-width: 767px){
+@media(max-width: 992px){
     .contact{
-        width: 90%;
+        width: 70%;
     }
     .contact button{
         width: 100%;
+    }
+}
+@media(max-width: 767px){
+    .contact{
+        width: 90%;
     }
 }
 
@@ -419,10 +459,12 @@ a{
 .coner{
     padding-left: 48px;
 }
-@media(max-width: 767px){
+@media(max-width: 992px){
     .fcontainer{
-        margin: 0 24px;
+        width: 100%;
     }
+}
+@media(max-width: 767px){
     .fhm{
         display: flex;
         justify-content: space-between;
